@@ -32,13 +32,9 @@ class Solution{
          {
              int k = 0;
              while(k < min(dict[i].size(),dict[j].size()) && dict[i][k] == dict[j][k])
-             {
                  k++;
-             }
              if(k < min(dict[i].size(),dict[j].size()) && dict[i][k] != dict[j][k])
-             {
                  adj[dict[i][k]-'a'].push_back(dict[j][k]-'a');
-             }
              i++;j++;
          }
         string ans = "";
