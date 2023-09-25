@@ -23,7 +23,6 @@ class Solution{
     }
     
     string findOrder(string dict[], int n, int k) {
-         if(n == 1) return "1";
          int i = 0,j = 1;
          int ch;
          vector<int> adj[k+1];
